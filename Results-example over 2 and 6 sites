@@ -1,0 +1,24 @@
+Preparation of a desired state over sites {2,n} with n-number of steps. Total final state over sites {1,n+1}.  Initial state arbitrary superposition over 1 site. 
+
+ 
+
+Example n=5, sites =6 
+
+Target state over sites i={2,5} :  
+
+target=np.array ([[0.52619533, 0.27592482, 0.26093188, 0.2510644 ], [0.2290105 , 0.48391584, 0.3214155 , 0.35487592]])  
+
+Program has to find d[0] , d[1] 
+
+final_state = np.array([[d[0],0.52619533, 0.27592482, 0.26093188, 0.2510644,0 ], [0,0.2290105 , 0.48391584, 0.3214155 , 0.35487592,d[1]]])  
+
+Result d = [0.48107031 0.63099229]  
+eqatuion1=orthogonality condition = [[-8.11959944e-11]] 
+
+Example n=3, sites = 4 
+
+Target state over sites i={2,3} :  
+
+final_state = np.array([[d[0],0.6148,0.3493,0],[0,0.3492,-0.6148,d[1]]])
+
+Result d = [0.0 0.0]  
